@@ -7,7 +7,7 @@ resource azurerm_resource_group example {
 resource "azurerm_public_ip" "example" {
   name                = var.pipname
   resource_group_name = var.rgname
-  location            = var/loc
+  location            = var.loc
   allocation_method   = var.all_met
   sku = var.sku
   ip_version = "IPv4"
